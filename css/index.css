@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    /* display: flex;
+    align-items: center;
+    position: absolute;  */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#logo{
+    /* margin: 16px 53px;
+    height: 10px 34px; */
+    display: block;
+    margin-left: 47.5%;
+    margin-top: 1%;
+
+}
+#logo img{
+    height: 80px;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'New Tegomin', serif;
+    align-items: center;margin-left: 43%;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    align-items: center;
+    font-family: 'Bree Serif', serif;
+    opacity: 0.5;
+}
+#navbar::before{
+    content: "";
+    background-color:black;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+#navbar ul li a{
+    padding: 3px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: block;
+    color:white;
+    cursor: pointer;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color:rgb(175, 132, 75);
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 683px;
+}
+#home::before{
+    content: "";
+    background: url('../images/bg2.jpg') no-repeat center center/cover;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+    filter: brightness(50%);
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 4px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 6px;
+    background-color: bisque;
+
+    
+}
+
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+
+}
+
+#services .box p{
+    font-family: 'New Tegomin', serif;
+}
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'New Tegomin', serif;
+}
+
+.h-secondary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'New Tegomin', serif;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 17px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color:black;
+    background-color: darkgray;
+}
+
+.center{
+    text-align: center;
+}
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background-image: url('../images/Ground.jpeg');
+    background-size: 100%;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+}
+footer{
+    background: black;
+    color: blanchedalmond;
+    padding: 9px 20px;
+}
